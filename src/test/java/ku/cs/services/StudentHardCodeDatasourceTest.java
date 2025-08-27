@@ -11,6 +11,13 @@ class StudentHardCodeDatasourceTest {
     void testReadData(){
         StudentHardCodeDatasource data = new StudentHardCodeDatasource();
         StudentList studentList = data.readData();
-
+        assertEquals("6710400001",studentList.getStudents().get(0).getId());
+        assertEquals("6710400002",studentList.getStudents().get(1).getId());
+        assertEquals("6710400003",studentList.getStudents().get(2).getId());
+        assertEquals("6710400004",studentList.getStudents().get(3).getId());
+        assertEquals("First",studentList.getStudents().get(0).getName());
+        assertEquals("Second",studentList.getStudents().get(1).getName());
+        assertEquals("Third",studentList.getStudents().get(2).getName());
+        assertEquals("Fourth",studentList.getStudents().get(3).getName());
     }
 }
