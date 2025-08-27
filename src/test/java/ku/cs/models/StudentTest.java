@@ -42,7 +42,7 @@ class StudentTest {
     }
 
     @Test
-    @DisplayName("ทดสอบการเพิ่มคะแนน 40.1 คะแนน")
+    //@DisplayName("ทดสอบการเพิ่มคะแนน 40.1 คะแนน")
     void testAddScore(){
         s.addScore(40.1);
         assertEquals(40.1, s.getScore());
@@ -52,6 +52,30 @@ class StudentTest {
     void totalCalculateGrade(){
         s.addScore(20);
         assertEquals("F", s.grade());
+        s.addScore(29);
+        assertEquals("F", s.grade());
+        s.addScore(1);
+        assertEquals("D", s.grade());
+        s.addScore(6);
+        assertEquals("D", s.grade());
+        s.addScore(3);
+        assertEquals("D", s.grade());
+        s.addScore(1);
+        assertEquals("C", s.grade());
+        s.addScore(4);
+        assertEquals("C", s.grade());
+        s.addScore(5);
+        assertEquals("C", s.grade());
+        s.addScore(1);
+        assertEquals("B", s.grade());
+        s.addScore(1);
+        assertEquals("B", s.grade());
+        s.addScore(8);
+        assertEquals("B", s.grade());
+        s.addScore(1);
+        assertEquals("A", s.grade());
+        s.addScore(7);
+        assertEquals("A", s.grade());
     }
 
     @Test
