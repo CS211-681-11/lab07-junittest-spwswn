@@ -42,7 +42,7 @@ class StudentTest {
     }
 
     @Test
-    //@DisplayName("ทดสอบการเพิ่มคะแนน 40.1 คะแนน")
+    @DisplayName("ทดสอบการเพิ่มคะแนน 40.1 คะแนน")
     void testAddScore(){
         s.addScore(40.1);
         assertEquals(40.1, s.getScore());
