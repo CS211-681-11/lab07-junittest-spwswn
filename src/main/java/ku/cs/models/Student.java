@@ -43,7 +43,7 @@ public class Student {
             grade = "C";
         }
         else  if (score>=50){
-            grade = "d";
+            grade = "D";
         }
         return grade;
     }
